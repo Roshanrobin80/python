@@ -62,7 +62,7 @@ while a>0:
 
 #fibonnaci series
 
-num=int(input("Enter the limit: "))
+'''num=int(input("Enter the limit: "))
 a=0
 b=1
 i=0
@@ -71,7 +71,7 @@ while i<num:
     c=a+b
     a=b
     b=c
-    i+=1 
+    i+=1 '''
 
 
 
