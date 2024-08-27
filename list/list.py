@@ -86,3 +86,98 @@ for i in l:
     if i not in l1:
         l1.append(i)
 print(l1)'''
+
+#reverse and palindrome of string
+'''l=['malayalam','amma','apple','orange']
+for i in l:
+    rev=i[::-1]
+    if rev==i:
+        print(rev,'palindrome')
+    else:
+        print(rev,'not palindrome')'''
+
+#no.s not divisible by 3
+'''l=[12,7,9,15,36,45,18]
+for i in l:
+    if i%3==0:
+        print(i,'divisible')
+else:
+    print(i,'not divisible')'''
+
+#arithematic operation choices
+
+'''while True:
+    print(''''''
+1.add
+2.sub
+3.mult
+4.div
+5.exit
+    '''''')
+    ch=int(input('enetr your choice: '))
+    if ch==1:
+        a=int(input('enetr first no: '))
+        b=int(input('enetr second no: '))
+        c=a+b
+        print(c)
+    elif ch==2:
+        a=int(input('enetr first no: '))
+        b=int(input('enetr second no: '))
+        c=a-b
+        print(c)
+    elif ch==3:
+        a=int(input('enetr first no: '))
+        b=int(input('enetr second no: '))
+        c=a*b
+        print(c)
+    elif ch==4:
+        a=int(input('enetr first no: '))
+        b=int(input('enetr second no: '))
+        c=a/b
+        print(c)
+    elif ch==5:
+        break
+    else:
+        print('invalid choice')
+'''
+
+std=[]
+while True:
+    print('''
+1.add std
+2.view std
+3.update std
+4.delete std
+5.exit
+    ''')
+    ch=int(input('enetr your choice: '))
+    if ch==1:
+        name=str(input('eneter name: '))
+        age=int(input('eneter age: '))
+        mark=int(input('enter marks: '))
+        std.append([name,age,mark])
+    elif ch==2:
+        for i in std:
+            print(i)
+    elif ch==3:
+        name=str(input('enter name'))
+        f=0
+        for i in std:
+            if name in i:
+                mark=int(input('enter mark'))
+                i[2]=mark
+                f=1
+        if f==0:
+            print('invalid name')
+
+    elif ch==4:
+        std=[]
+        std.remove([name,age,mark])
+
+    elif ch==5:
+        break
+    else:
+        print('invalid choice')
+
+
+
