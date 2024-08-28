@@ -141,15 +141,16 @@ else:
         print('invalid choice')
 '''
 
-std=[]
+#student details
+'''std=[]
 while True:
-    print('''
+    print(''''''
 1.add std
 2.view std
 3.update std
 4.delete std
 5.exit
-    ''')
+    '''''')
     ch=int(input('enetr your choice: '))
     if ch==1:
         name=str(input('eneter name: '))
@@ -171,13 +172,66 @@ while True:
             print('invalid name')
 
     elif ch==4:
-        std=[]
-        std.remove([name,age,mark])
-
+        name=str(input('enter name'))
+        f=0
+        for i in std:
+            if name in i:
+                std.remove(i)
+                f=1
+        if f==0:
+            print('invalid name')
     elif ch==5:
         break
     else:
-        print('invalid choice')
+        print('invalid choice')'''
 
+#employee details
+emp=[]
+id=100
+while True:
+    print('''
+1.register emp
+2.view emp
+3.update emp
+4.delete emp
+5.add work
+6.search
+7.exit
+    ''')
+    ch=int(input('enter your choice: '))
+    if ch==1:
+        name=str(input('enter name: '))
+        id+=1
+        empid=id
+        age=int(input('enter age: '))
+        place=str(input('enter place: '))
+        salary=int(input('enter salary: '))
+        position=str(input('enter positon: '))
+        experience=str(input('enter experience: '))
+        emp.append([name,age,place,salary,position,experience])
+    elif ch==2:
+        for i in emp:
+            print(i)
+    elif ch==3:
+        name=str(input('enter name'))
+        f=0
+        for i in emp:
+            if name in i:
+                salary=int(input('enter salary'))
+                i[2]=salary
+                f=1
+        if f==0:
+            print('invalid name')
+        f=0
+        for i in emp:
+            if name in i:
+                experience=str(input('enter experience'))
+                i[3]=experience
+                f=1
+        if f==0:
+            print('invalid name')
+
+
+   
 
 
