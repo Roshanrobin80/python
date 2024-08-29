@@ -188,6 +188,7 @@ while True:
 #employee details
 emp=[]
 id=100
+import datetime
 while True:
     print('''
 1.register emp
@@ -208,16 +209,16 @@ while True:
         salary=int(input('enter salary: '))
         position=str(input('enter positon: '))
         experience=str(input('enter experience: '))
-        emp.append([name,age,place,salary,position,experience])
+        emp.append([name,age,id,place,salary,position,experience])
     elif ch==2:
         for i in emp:
             print(i)
     elif ch==3:
-        name=str(input('enter name'))
+        name=str(input('enter name: '))
         f=0
         for i in emp:
             if name in i:
-                salary=int(input('enter salary'))
+                salary=int(input('enter salary: '))
                 i[2]=salary
                 f=1
         if f==0:
@@ -225,12 +226,43 @@ while True:
         f=0
         for i in emp:
             if name in i:
-                experience=str(input('enter experience'))
+                experience=str(input('enter experience: '))
                 i[3]=experience
                 f=1
         if f==0:
             print('invalid name')
-
+    elif ch==4:
+        name=str(input('enter name: '))
+        f=0
+        for i in emp:
+            if name in i:
+                emp.remove(i)
+                f=1
+        if f==0:
+            print('invalid name')
+    elif ch==5:
+        import datetime
+        while True:
+            id=input('eneter id: ')
+            for i in emp:
+                if id in i:
+                    task=input('enter task: ')
+                    date=datetime.datetime.now().strftime('%x')
+                    i.append([task,date])
+            print(emp)
+    elif ch==6:
+        id=input('enter id: ')
+        f=0
+        for i in emp:
+            if id in i:
+                print(i)
+                f=1
+            if f==0:
+                print('id not found')        
+    elif ch==7:
+            break
+    else:
+            print('invalid choice')
 
    
 
