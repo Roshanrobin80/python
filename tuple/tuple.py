@@ -41,7 +41,7 @@ print(l)
 t=tuple(l)
 print(t)'''
 
-t=(1,2,3,4,1,2,3,5,3,6)
+'''t=(1,2,3,4,1,2,3,5,3,6)
 a=int(input('enter the value: '))
 c=t.count(a)
 print(c)
@@ -50,4 +50,4 @@ while c>0:
     p=t.index(a,pos)
     pos=p+1
     print('index: ',p)
-    c-=1
+    c-=1'''
