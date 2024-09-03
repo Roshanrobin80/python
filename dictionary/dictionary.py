@@ -51,3 +51,61 @@ else:
 # print(d)
 # l=[10,11,12]
 # print(d.fromkeys(l))'''
+
+'''d={}
+a=input('enter data: ')
+b=input('enter data: ')
+d[a]=b
+print(d)'''
+
+#shop management system
+
+shp=[]
+id=1000
+while True:
+    print('''
+1.Add product
+2.View product
+3.Update product
+4.Delete product
+5.Exit
+''')
+    ch=int(input('enter a choice: '))
+    if ch==1:
+        pname=str(input('enter product name: '))
+        id+=1
+        pid=id
+        price=int(input('enter price of product: '))
+        stock=int(input('enter stocks of product: '))
+        shp.append({'pname':pname,'pid':pid,'price':price,'stock':stock})
+
+    elif ch==2:
+        for i in shp:
+            print(i)
+
+    elif ch==3:
+        pname=str(input('enter product name: '))
+        f=0
+        for i in shp:
+            if i['pname']==pname:
+                nstock=int(input('enter new stocks of product: '))
+                nprice=int(input('enter new price: '))
+                i['stock']=nstock
+                i['price']=nprice
+                f=1
+        if f==0:
+            print('invalid name')
+
+    elif ch==4:
+        pname=str(input('enter product name: '))
+        f=0
+        for i in shp:
+            if i['pname']==pname:
+                shp.remove(i)
+                f=1
+        if f==0:
+            print('invalid name')
+    elif ch==5:
+        break
+    else:
+        print('invalid choice')
