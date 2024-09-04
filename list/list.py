@@ -186,11 +186,11 @@ while True:
         print('invalid choice')'''
 
 #employee details
-'''emp=[]
+emp=[]
 id=100
 import datetime
 while True:
-    print(''''''
+    print('''
 1.register emp
 2.view emp
 3.update emp
@@ -198,7 +198,7 @@ while True:
 5.add work
 6.search
 7.exit
-    '''''')
+    ''')
     ch=int(input('enter your choice: '))
     if ch==1:
         name=str(input('enter name: '))
@@ -262,6 +262,6 @@ while True:
     elif ch==7:
             break
     else:
-            print('invalid choice')'''
+            print('invalid choice')
 
  
