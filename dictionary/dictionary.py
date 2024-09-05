@@ -60,16 +60,16 @@ print(d)'''
 
 #shop management system
 
-shp=[]
+'''shp=[]
 id=1000
 while True:
-    print('''
+    print(''''''
 1.Add product
 2.View product
 3.Update product
 4.Delete product
 5.Exit
-''')
+'''''')
     ch=int(input('enter a choice: '))
     if ch==1:
         pname=str(input('enter product name: '))
@@ -108,4 +108,54 @@ while True:
     elif ch==5:
         break
     else:
-        print('invalid choice')
+        print('invalid choice')'''
+
+data=[{'name':'a','age':20},
+{'name':'b','age':30},
+{'name':'c','age':45},
+{'name':'d','age':23},
+{'name':'e','age':15}]
+'''# for i in data:
+    # print(i['age'])
+print('{:<10}{:<10}'.format('name','age'))
+print('_'*15)
+for i in data:
+    print('{:<10}{:<10}'.format(i['name'],i['age']))
+
+print('{:<10}{:<10}'.format('name','age'))
+print('_'*15)
+for i in data:
+    if i['age']<=30:
+        print('{:<10}{:<10}'.format(i['name'],i['age']))
+
+print('{:<10}{:<10}'.format('name','age'))
+print('_'*15)
+for i in data:
+    if i['age']>30:
+        print('{:<10}{:<10}'.format(i['name'],i['age']))'''
+#method 2
+'''a=[]
+b=[]
+for i in data:
+    if i['age']<=30:
+        b.append(i)
+    else:
+        a.append(i)
+print(a)
+print(b)'''
+
+#method 3
+
+'''a=[]
+b=[]
+b=[i for i in data if i['age']<=30]
+a=[i for i in data if i['age']>30]
+print(a)
+print(b)'''
+
+
+n={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine',10:'ten',}
+a=int(input('Enter a number: '))
+a=str(a)
+for i in a:
+    print(i)
