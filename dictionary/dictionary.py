@@ -110,12 +110,12 @@ while True:
     else:
         print('invalid choice')'''
 
-data=[{'name':'a','age':20},
+'''data=[{'name':'a','age':20},
 {'name':'b','age':30},
 {'name':'c','age':45},
 {'name':'d','age':23},
 {'name':'e','age':15}]
-'''# for i in data:
+# for i in data:
     # print(i['age'])
 print('{:<10}{:<10}'.format('name','age'))
 print('_'*15)
@@ -153,9 +153,25 @@ a=[i for i in data if i['age']>30]
 print(a)
 print(b)'''
 
+#display each number by words
 
-n={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine',10:'ten',}
+'''n={0:'zero',1:'one',2:'two',3:'three',4:'four',5:'five',6:'six',7:'seven',8:'eight',9:'nine',10:'ten',}
 a=int(input('Enter a number: '))
-a=str(a)
-for i in a:
-    print(i)
+s=''
+while a>0:
+    d=a%10
+    s=n[d]+' '+s
+    a//=10
+print(s)'''
+
+#display list from dictionary
+
+l=[{'name':'a','age':20,'project':['ems','sms']}]
+#print(l[0]['project'][0])
+
+#add to list
+a=str(input('Enter project name: '))
+l[0]['project'].append(a)
+print(l)
+
+
