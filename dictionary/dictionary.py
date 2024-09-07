@@ -166,12 +166,11 @@ print(s)'''
 
 #display list from dictionary
 
-l=[{'name':'a','age':20,'project':['ems','sms']}]
+'''l=[{'name':'a','age':20,'project':['ems','sms']}]
 #print(l[0]['project'][0])
 
 #add to list
 a=str(input('Enter project name: '))
 l[0]['project'].append(a)
-print(l)
-
+print(l)'''
 
