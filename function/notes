@@ -1,0 +1,18 @@
+lambda function
+---------------
+
+* Anonymous function
+* Nameless func
+* Single line func
+* Single expression at a time
+
+syntax
+
+lambda arg:Exp(stmts)
+
+Q)Minimum arguments of lambda function?
+A:Zero
+
+filter syntax
+
+filter(func,iterables)

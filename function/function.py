@@ -110,3 +110,16 @@ sample(['asd',20,21],20)  '''
 sample('anu',20)
 sample(20,'arun')
 sample(age=20,name='akhil')'''
+
+#Lambda function
+
+'''data=lambda a,b:a+b
+print(data(10,5))'''
+
+'''data=lambda:print('welcome')
+data()'''
+
+#filter
+
+l=['hello','welcome','apple','kiwi']
+print(list(filter(lambda x:'e' in x,l)))
