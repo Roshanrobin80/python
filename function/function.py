@@ -121,5 +121,5 @@ data()'''
 
 #filter
 
-l=['hello','welcome','apple','kiwi']
-print(list(filter(lambda x:'e' in x,l)))
+'''l=['hello','welcome','apple','kiwi']
+print(list(filter(lambda x:'e' in x,l)))'''
