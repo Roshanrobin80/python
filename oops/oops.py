@@ -106,7 +106,7 @@ roshan.sports()'''
 
 #3 multi-level inheritance
 
-class kerala_university:
+'''class kerala_university:
     def exam(self):
         print('exam')
     def result(self):
@@ -124,4 +124,81 @@ sam.exam()
 sam.result()
 sam.notes()
 sam.labs()
-sam.uniform()
+sam.uniform()'''
+
+#4 hierarchical inheritance
+
+'''class syn:
+    def python(self):
+        print('python')
+    def php(self):
+        print('php')
+class non_teaching_staff(syn):
+    def admission(self):
+        print('adm')
+class teaching_staff(syn):
+    def python_cor(self):
+        print('python_prgm')
+staff1=non_teaching_staff()
+staff1.admission()
+staff2=teaching_staff()
+staff2.python_cor()
+staff2.php()'''
+
+#5 hybrid inheritance
+
+'''class syn:
+    def python(self):
+        print('python')
+    def php(self):
+        print('php')
+class non_teaching_staff(syn):
+    def admission(self):
+        print('adm')
+class teaching_staff(syn):
+    def python_cor(self):
+        print('python_prgm')
+class std(teaching_staff):
+    def notes(self):
+        print('notes')
+
+staff1=non_teaching_staff()
+staff2=teaching_staff()
+alan=std()
+alan.notes()
+staff1.admission()
+staff2.python_cor()
+staff2.php()'''
+
+#Eg.2
+
+class phone:
+    def call(self):
+        print('call')
+    def text(self):
+        print('text')
+class android(phone):
+    def multitasking(self):
+        print('multitasking')
+class ios(phone):
+    def privacy(self):
+        print('privacy')
+class versions(android):
+    def kitkat(self):
+        print('kitkat')
+    def jellybean(self):
+        print('jellybean')
+ph1=android()
+ph2=ios()
+ver=versions()
+ph1.multitasking()
+ph1.call()
+ph2.privacy()
+ph2.call()
+ver.kitkat()
+ver.jellybean()
+
+
+
+
+
