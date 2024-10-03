@@ -172,7 +172,7 @@ staff2.php()'''
 
 #Eg.2
 
-class phone:
+'''class phone:
     def call(self):
         print('call')
     def text(self):
@@ -196,7 +196,7 @@ ph1.call()
 ph2.privacy()
 ph2.call()
 ver.kitkat()
-ver.jellybean()
+ver.jellybean()'''
 
 
 
