@@ -1,4 +1,4 @@
-from abc import ABC,abstractmethod
+'''from abc import ABC,abstractmethod
 class syn(ABC):
     @abstractmethod
     def reg(self):
@@ -17,4 +17,4 @@ class staff(syn):
         print('staff reg')
 
 staff1=staff()
-staff1.reg()
+staff1.reg()'''

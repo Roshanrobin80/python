@@ -8,7 +8,7 @@ class std(school):
 manu=std()
 manu.notes('py')'''
 
-class bank:
+'''class bank:
     def __init__(self):
         print('add bank details')
 class users(bank):
@@ -16,4 +16,4 @@ class users(bank):
         super().__init__()
         print('add user details')
 
-sbi=bank()
+sbi=bank()'''
