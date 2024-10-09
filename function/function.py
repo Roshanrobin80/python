@@ -37,10 +37,10 @@ print('outside function a =',a)'''
     print('welcome',a)
 sample()
 print(a)
-'''
+
 #return keyword
 
-'''def sample():
+def sample():
     a=10
     b=20
     return 'welcome',a,b
